@@ -7,10 +7,15 @@
     <meta name="keywords" content="Партнерские программы, заработок в интернете, заработок на партнерках">
     <meta name="description" content="Это блог по заработку на партнерских программах">
     <title>O sebe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Всем привет, меня зовут Сергей</h1>
-    <img src="Serega.jpg" alt="oven" width="250">
+    <div class="container">
+    <class="info">
+    <img src="Serega.jpg" alt="oven" class="avatar">
+    <div class="info-text">
+    <h1>Всем привет, меня зовут Сергей.</h1>
+    
     <p>Когда то очень давно после Универа я увлекся созданием сайтов. Начал изучать HTML и CSS. 
         Делал сначала на бесплатном хостинге (под САПУ), потом уже начал осваивать Joomla и Wordpress. 
         Параллельно писал статьи для своих сайтов.
@@ -25,19 +30,32 @@
          <hr>
          
          <p><b><h2>Мои соцсети</h2></b></p>
-          <b>Instagram
-         Telegram
-         VK</b>
-         <hr>
+          <a href="https://instagram.com" target="_blank">Instagram |</a>
+         <a href="https://Telegram" target="_blank">Telegram |</a>
+         <a href="https://vk.com" target="_blank">VK</a>
+        </div>
+        <br>
+    
+    <div class=" card bg-green">
+        <h3>Мои хобби</h3>
+        <ol class="list">
+            <li>Занятие спортом</li>
+            <li>Путешествие</li>
+            <li>Программирование</li>
+            <li>Заработок в интернете</li>
+        </ol>
+    </div>
+         <div class="card bg-yellow">
          <h3>Опыт работы</h3>
-         <table>
-<tr>
+         <table class="table">
+<!-- <tr>
     <thead>
     <th>Название </th>
     <th>Должность</th>
     <th>Год</th>
 </thead>
-</tr>
+</tr> -->
+
 <tbody>
     <tr>
         <td>ОАО МАЗ</td>
@@ -61,27 +79,41 @@
     </tr>
 
 </tbody>
-
+        
          </table>
-         
-            <h3>Связаться со мной</h3>
-            <form>
-         <div>
+         </div>
+
+        <div class="card bg-blue">
+         <h3>Мои обучающие курсы</h3>
+
+         <ul class="list">
+            <li>HTML ad CSS автор Э.Фримен</li>
+            <li>Портал learn Javascript</li>
+            <li>Курс по Javascript И. Петриченко</li>
+         </ul>
+        </div>
+
+         <div class="card bg-red">
+            
+            <form action="/" class="form">
+                <h3>Связаться со мной</h3>
+         <div class="form-group">
             <label for="name">Имя:</label>
             <input type="text"  id="name" placeholder="Введите имя">
          </div>
-         <div>
+         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Введите email">
          </div>
-         <div>
+         <div class="form-group">
             
-            <label for="message">Сообщение:</label>
-            <br>
+            <label for="message">Ваше ообщение:</label>
             <textarea id="message" cols="25" rows="5">Введите сообщение...</textarea>
          </div>
-         <button type="submit">Отправить!</button>
+         <button class="btn" type="submit">Отправить!</button>
          </form>
-    
+        </div>
+         
+    </div>
 </body>
 </html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+    font-weight: normal;
+    background: #f5efef;
+    color: #0f141e;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+}
+a:visited {
+    color: grey;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    /* box-shadow - создание тени, можно посм. код ПКМ */
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25); 
+}
+
+.info {
+    margin-bottom:100px;
+   
+}
+.info-text p {
+font-style: italic;
+font-weight: bold;
+color: #57657e;
+margin: 10px;
+text-align:justify;
+}
+.info-text h2 {
+    margin-bottom: 10px ;
+}
+.card {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    /* margin-bottom надо стараться всегда использовать для красоты */
+}
+.card h3 {
+    margin-bottom: 10px;
+
+}
+.bg-green{
+    background: #dcf3de;
+}
+
+.bg-yellow {
+    background: #f3e7ab;
+}
+    
+    .bg-blue {
+        background: rgb(194, 194, 224);
+        
+    }
+    
+.bg-red {
+background: #dd9f9d;
+}
+.btn {
+
+    background: #111;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.list {
+    padding: 0 20px;
+}
+.list li {
+    color: #0b2a5f;
+    margin-bottom: 10px;
+}
+.table {
+    width: 100%;
+}
+.table td {
+    padding-bottom: 10px ;
+}
+.table tr:nth-child(odd) {
+background: #d6cf93;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    color: #2d4670;
+}
+.form h3 {
+    text-align: center;
+}
+.form-group label {
+    /* display: block; - label это inline элемент, ставим block */
+    display: block;
+    font-size: 14px;
+    color: #2d4670;
+    padding: 10px 0 10px;
+    font-weight: bold;
+}
+.form-group input, 
+.form-group textarea {
+    width: 30%;
+    box-sizing: border-box;
+    border: none;
+    /* background: transparent; - цвет фона становится прозрачным и поэтому оно становится цветом фона нашего body*/
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 14px;
+}
